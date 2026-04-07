@@ -57,7 +57,7 @@ export default function CreateProjectPage() {
 
   useEffect(() => {
     if (project) router.push(`/project/${project.id}`);
-  }, [loading]);
+  }, [loading, project, router]);
 
   if (!isOrgLoaded || !isUserLoaded) {
     return null;

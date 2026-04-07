@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
         
         <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto font-medium">
-          The all-in-one project management solution designed to elevate your team's productivity and streamline every workflow.
+          The all-in-one project management solution designed to elevate your team&apos;s productivity and streamline every workflow.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">

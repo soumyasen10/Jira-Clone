@@ -94,7 +94,7 @@ export default function SprintCreationForm({
                   id="name"
                   {...register("name")}
                   readOnly
-                  className="bg-slate-950"
+                  className="bg-white"
                 />
                 {errors.name && (
                   <p className="text-red-500 text-sm mt-1">
@@ -114,7 +114,7 @@ export default function SprintCreationForm({
                       <PopoverTrigger asChild>
                         <Button
                           variant="outline"
-                          className={`w-full justify-start text-left font-normal bg-slate-950 ${
+                          className={`w-full justify-start text-left font-normal bg-white ${
                             !dateRange && "text-muted-foreground"
                           }`}
                         >
@@ -129,17 +129,17 @@ export default function SprintCreationForm({
                         </Button>
                       </PopoverTrigger>
                       <PopoverContent
-                        className="w-auto bg-slate-900"
+                        className="w-auto bg-white"
                         align="start"
                       >
                         <DayPicker
                           classNames={{
-                            chevron: "fill-blue-500",
-                            range_start: "bg-blue-700",
-                            range_end: "bg-blue-700",
-                            range_middle: "bg-blue-400",
+                            chevron: "fill-orange-500",
+                            range_start: "bg-orange-700",
+                            range_end: "bg-orange-700",
+                            range_middle: "bg-orange-400",
                             day_button: "border-none",
-                            today: "border-2 border-blue-700",
+                            today: "border-2 border-orange-700",
                           }}
                           mode="range"
                           disabled={[{ before: new Date() }]}

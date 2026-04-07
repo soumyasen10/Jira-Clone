@@ -281,15 +281,18 @@ export default function IssueCreationDrawer({
               name="description"
               control={control}
               render={({ field }) => (
-                <MDEditor
-                  value={field.value}
-                  onChange={field.onChange}
-                  commands={mdCommands}
-                  height={400}
-                  textareaProps={{
-                    onKeyDown: (e) => handleEditorKeyDown(e, field),
-                  }}
-                />
+                <div data-color-mode="light">
+                  <MDEditor
+                    value={field.value}
+                    onChange={field.onChange}
+                    commands={mdCommands}
+                    height={400}
+                    preview="edit"
+                    textareaProps={{
+                      onKeyDown: (e) => handleEditorKeyDown(e, field),
+                    }}
+                  />
+                </div>
               )}
             />
           </div>

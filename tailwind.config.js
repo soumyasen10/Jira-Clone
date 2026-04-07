@@ -48,6 +48,16 @@ module.exports = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			orange: {
+  				50: 'hsl(var(--orange-50))',
+  				100: 'hsl(var(--orange-100))',
+  				200: 'hsl(var(--orange-200))',
+  				300: 'hsl(var(--orange-300))',
+  				400: 'hsl(var(--orange-400))',
+  				500: 'hsl(var(--orange-500))',
+  				600: 'hsl(var(--orange-600))',
+  				700: 'hsl(var(--orange-700))',
   			}
   		},
   		borderRadius: {

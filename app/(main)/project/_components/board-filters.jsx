@@ -75,14 +75,14 @@ export default function BoardFilters({ issues, onFilterChange }) {
                 <div
                   key={assignee.id}
                   className={`rounded-full ring ${
-                    selected ? "ring-blue-600" : "ring-black"
+                    selected ? "ring-orange-600" : "ring-gray-200"
                   } ${i > 0 ? "-ml-6" : ""}`}
                   style={{
                     zIndex: i,
                   }}
                   onClick={() => toggleAssignee(assignee.id)}
                 >
-                  <Avatar className="h-10 w-10">
+                  <Avatar className="h-10 w-10 border-2 border-white">
                     <AvatarImage src={assignee.imageUrl} />
                     <AvatarFallback>{assignee.name[0]}</AvatarFallback>
                   </Avatar>

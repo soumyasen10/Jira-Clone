@@ -146,10 +146,12 @@ export default function IssueDetailsDialog({
           </div>
           <div>
             <h4 className="font-semibold">Description</h4>
+          <div data-color-mode="light">
             <MDEditor.Markdown
               className="rounded px-2 py-1"
               source={issue.description ? issue.description : "--"}
             />
+          </div>
           </div>
           <div className="flex justify-between">
             <div className="flex flex-col gap-2">

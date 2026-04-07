@@ -32,7 +32,7 @@ body {
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
     --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --input: 0 0% 100%;
     --ring: 24 100% 50%;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
@@ -40,6 +40,15 @@ body {
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.75rem;
+
+    --orange-50: 33 100% 96%;
+    --orange-100: 33 100% 91%;
+    --orange-200: 33 100% 82%;
+    --orange-300: 33 100% 70%;
+    --orange-400: 33 100% 58%;
+    --orange-500: 33 100% 45%;
+    --orange-600: 33 100% 38%;
+    --orange-700: 33 100% 28%;
   }
   .dark {
     --background: 222.2 84% 4.9%;
@@ -59,7 +68,7 @@ body {
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
     --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
+    --input: 0 0% 100%;
     --ring: 24 100% 50%;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
@@ -67,6 +76,26 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
+}
+
+/* Force MDEditor to light mode and white background */
+[data-color-mode="dark"] .w-md-editor,
+[data-color-mode="dark"] .wmde-markdown-var,
+.w-md-editor {
+  --color-canvas-default: #ffffff !important;
+  --color-canvas-subtle: #f6f8fa !important;
+  --color-border-default: #d0d7de !important;
+  --color-fg-default: #24292f !important;
+  --color-accent-fg: #0969da !important;
+}
+
+.w-md-editor-content {
+  background-color: #ffffff !important;
+}
+
+.w-md-editor-toolbar {
+  background-color: #f6f8fa !important;
+  border-bottom: 1px solid #d0d7de !important;
 }
 
 @layer base {
